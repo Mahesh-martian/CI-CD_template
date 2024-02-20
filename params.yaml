@@ -13,13 +13,12 @@ train:
     svm__C:
     - 0.1
     - 1
-    - 10
-    - 100
+    - 101
     svm__gamma:
     - 0.1
     - 1
     - 10
   grid_search:
-    cv: 2
+    cv: 3
     scoring: accuracy
     verbose: 3
