@@ -47,22 +47,21 @@ stages:
             svm__C:
             - 0.1
             - 1
-            - 10
-            - 100
+            - 101
             svm__gamma:
             - 0.1
             - 1
             - 10
           grid_search:
-            cv: 2
+            cv: 3
             scoring: accuracy
             verbose: 3
     outs:
     - path: model/svm
-      md5: 3c0e38842fdbc0afce2ab02857a11944
-      size: 142650
+      md5: 2ed0eff8cf6a435e20d0430b4c664423
+      size: 160060
     - path: model/svm.mlem
-      md5: e306f4d25877b05c1c765940f2fad758
+      md5: 7275fe63f53c1bfddbbdf5b7e7384a4b
       size: 1325
   evaluate:
     cmd: python src/evaluate.py
@@ -72,8 +71,8 @@ stages:
       size: 194875
       nfiles: 4
     - path: model/svm
-      md5: 3c0e38842fdbc0afce2ab02857a11944
-      size: 142650
+      md5: 2ed0eff8cf6a435e20d0430b4c664423
+      size: 160060
     - path: src/evaluate.py
       md5: 912aac9c6e00b70858f1d47bd16e51a0
       size: 830
@@ -85,5 +84,5 @@ stages:
         model: model/svm
     outs:
     - path: dvclive/metrics.json
-      md5: 62b3730eec31d2778145d46759a8a45f
-      size: 29
+      md5: d883d3a4cc9dddb29de51edbbe9cd636
+      size: 26
