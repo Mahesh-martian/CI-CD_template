@@ -2,8 +2,7 @@
 <h1 align="center">
 CI/CD for Machine Learning Models
  </h3>
-  
-[![View on YouTube](https://img.shields.io/badge/YouTube-Watch%20on%20Youtube-red?logo=youtube)]([https://www.youtube.com/channel/UCNMawpMow-lW5d2svGhOEbw](https://youtu.be/rkg09nNMAhs)) 
+ 
 
 Sample project for:
 
